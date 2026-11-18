@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Kantin Darion</title>
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+</head>
+<body>
+    <header id="top">
+        <nav class="container navbar">
+            <a href="../index.html" class="brand">
+                <img src="../assets/images/logo/kantin-darion-logo.jpg" alt="Logo Kantin Darion dengan gambar koki dan peralatan memasak">
+                <span>Kantin Darion</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="products.html">Menu</a></li>
+                <li><a href="pricing.html">Harga</a></li>
+                <li><a href="gallery.html">Galeri</a></li>
+                <li><a href="contact.html" class="active">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-heading">
+            <div class="container">
+                <h1>Hubungi Kantin Darion</h1>
+                <p>Kalau ingin bertanya tentang menu atau pesanan acara sekolah,
+                   silakan lihat informasi di bawah ini.</p>
+            </div>
+        </section>
+
+        <section class="section-space">
+            <div class="container contact-layout">
+                <article class="contact-info">
+                    <h2>Informasi Kantin</h2>
+                    <h3>Alamat</h3>
+                    <p>Jl. Taman Belajar No. 12, Pontianak</p>
+                    <h3>Email</h3>
+                    <p>halo@kantindarion.example</p>
+                    <h3>Jam Buka</h3>
+                    <table>
+                        <caption>Jam operasional Kantin Darion</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Hari</th>
+                                <th scope="col">Jam</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Senin - Jumat</td>
+                                <td>07.00 - 15.00 WIB</td>
+                            </tr>
+                            <tr>
+                                <td>Sabtu - Minggu</td>
+                                <td>Tutup</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+
+                <section class="contact-form">
+                    <h2>Formulir Pesan</h2>
+                    <form action="#" method="get">
+                        <div class="form-group">
+                            <label for="full-name">Nama</label>
+                            <input type="text" id="full-name" name="full-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="topic">Keperluan</label>
+                            <select id="topic" name="topic" required>
+                                <option value="">Pilih keperluan</option>
+                                <option value="menu">Tanya menu</option>
+                                <option value="order">Pesanan acara sekolah</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="button">Kirim Pesan</button>
+                    </form>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>Kantin Darion - Jl. Taman Belajar No. 12, Pontianak</p>
+            <p>&copy; 2026 Kantin Darion</p>
+        </div>
+    </footer>
+    <a href="#top" class="back-to-top" aria-label="Kembali ke atas">↑</a>
+</body>
+</html>
