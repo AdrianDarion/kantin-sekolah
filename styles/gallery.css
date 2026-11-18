@@ -1,0 +1,144 @@
+.gallery-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---------- Hero ---------- */
+.gallery-hero {
+    background-color: #f8ebc9;
+    padding: 65px 0 55px;
+    border-bottom: 4px solid #dfb37d;
+}
+
+.gallery-hero h1 {
+    color: #92542e;
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.gallery-hero p {
+    max-width: 640px;
+    line-height: 1.7;
+}
+
+/* Jump links (flexbox) */
+.gallery-jump-links {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 0;
+}
+
+.gallery-jump-links a {
+    display: block;
+    padding: 8px 18px;
+    background-color: white;
+    color: #92542e;
+    text-decoration: none;
+    border: 1px solid #dec8b4;
+    border-radius: 20px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.gallery-jump-links a:hover {
+    background-color: #92542e;
+    color: #f8ebc9;
+}
+
+/* ---------- Sections ---------- */
+.gallery-section {
+    padding: 60px 0;
+}
+
+.gallery-section-alt {
+    background-color: #f8f2ea;
+}
+
+.gallery-section h2 {
+    color: #92542e;
+    font-size: 28px;
+    margin-bottom: 26px;
+    padding-left: 14px;
+    border-left: 5px solid #dfb37d;
+}
+
+/* ---------- Photo grid ---------- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 230px;
+    gap: 18px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    background-color: #f8ebc9;
+    border: 1px solid #dec8b4;
+    border-radius: 8px;
+}
+
+/* Wide item takes 2 columns, tall item takes 2 rows */
+.gallery-item-wide {
+    grid-column: span 2;
+}
+
+.gallery-item-tall {
+    grid-row: span 2;
+}
+
+.gallery-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.gallery-item:hover .gallery-img {
+    transform: scale(1.07);
+}
+
+/* Caption sits on top of the photo (absolute) and slides up on hover */
+.gallery-item figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 12px 16px;
+    background-color: rgba(146, 84, 46, 0.88);
+    color: #f8ebc9;
+    font-size: 15px;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover figcaption {
+    transform: translateY(0);
+}
+
+/* ---------- Fixed back-to-top button ---------- */
+.back-to-top {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    padding: 10px 18px;
+    background-color: #92542e;
+    color: #f8ebc9;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s, transform 0.2s;
+    z-index: 10;
+}
+
+.back-to-top:hover {
+    background-color: #7a4425;
+    transform: translateY(-3px);
+}
