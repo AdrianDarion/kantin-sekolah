@@ -8,7 +8,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ---------- Hero ---------- */
 .gallery-hero {
     background-color: #f8ebc9;
     padding: 65px 0 55px;
@@ -26,7 +25,6 @@ html {
     line-height: 1.7;
 }
 
-/* Jump links (flexbox) */
 .gallery-jump-links {
     display: flex;
     gap: 12px;
@@ -51,7 +49,6 @@ html {
     color: #f8ebc9;
 }
 
-/* ---------- Sections ---------- */
 .gallery-section {
     padding: 60px 0;
 }
@@ -68,7 +65,6 @@ html {
     border-left: 5px solid #dfb37d;
 }
 
-/* ---------- Photo grid ---------- */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -85,7 +81,6 @@ html {
     border-radius: 8px;
 }
 
-/* Wide item takes 2 columns, tall item takes 2 rows */
 .gallery-item-wide {
     grid-column: span 2;
 }
@@ -106,7 +101,6 @@ html {
     transform: scale(1.07);
 }
 
-/* Caption sits on top of the photo (absolute) and slides up on hover */
 .gallery-item figcaption {
     position: absolute;
     left: 0;
@@ -124,16 +118,19 @@ html {
     transform: translateY(0);
 }
 
-/* ---------- Fixed back-to-top button ---------- */
 .back-to-top {
     position: fixed;
     right: 24px;
     bottom: 24px;
-    padding: 10px 18px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #92542e;
     color: #f8ebc9;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 50%;
     transition: background-color 0.2s, transform 0.2s;
     z-index: 10;
 }
